@@ -62,7 +62,9 @@ function App() {
             <p>Reloading the site…</p>
           </div>
         </div>
-        <div className={`truck-animation-wrapper ${reloading ? "reload-center" : ""}`}>
+        <div
+          className={`truck-animation-wrapper ${reloading ? "reload-center" : ""}`}
+        >
           <div
             className={`truck-icon ${loading ? "truck-loading" : reloading ? "truck-reload" : "truck-entrance"}`}
           >
@@ -193,7 +195,7 @@ function App() {
                       <FaLongArrowAltRight />
                     </span>
                   </div>
-                  <div className="flex items-center gap-2 w-full">
+                  <div className="flex items-center gap-2 w-full max-[900px]:hidden">
                     <div>
                       <img
                         className="w-96 h-30 object-contain"
