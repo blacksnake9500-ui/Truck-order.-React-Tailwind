@@ -1,0 +1,231 @@
+@import "tailwindcss";
+
+@layer components {
+  .container_1200 {
+    max-width: 1200px;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+    @media (max-width: 900px) {
+      padding-left: 10px !important;
+      padding-right: 10px !important;
+    }
+  }
+
+  ::selection {
+    background-color: #fb5621;
+    color: white;
+  }
+
+  .hero_animation {
+    animation: gradientChange 10s linear infinite;
+  }
+  @keyframes gradientChange {
+    0% {
+      background: linear-gradient(90deg, #18262f98, transparent);
+    }
+
+    50% {
+      background: linear-gradient(90deg, #2947a95e, transparent);
+    }
+
+    100% {
+      background: linear-gradient(90deg, #2d7d463f, transparent);
+    }
+  }
+
+  .lightChange {
+    animation: lightChange 1s linear;
+  }
+
+  @keyframes lightChange {
+    0% {
+      background: linear-gradient(90deg, #fcfdfdb7, transparent);
+    }
+
+    50% {
+      background: linear-gradient(90deg, #fdfcfcc0, transparent);
+    }
+
+    100% {
+      background: linear-gradient(90deg, #fefffebd, transparent);
+    }
+  }
+
+  .max_container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .cont {
+    padding: 50px 0px;
+  }
+  .hover {
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  .hover:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 10px #fb5721f3;
+  }
+
+  button {
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  button:hover {
+    transform: scale(1.1);
+  }
+  button:active {
+    transform: scale(0.9);
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  .link li {
+    position: relative;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  .link li::after {
+    content: "";
+    position: absolute;
+    transition: all 0.3s ease;
+    background-color: #fb5621;
+    width: 0px;
+    height: 2px;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -5px;
+  }
+  .link li:hover::after {
+    width: 100%;
+  }
+
+  .yumaloq {
+    border-radius: 50px 0 0 50px;
+  }
+
+  /* chart1 */
+
+  .chart_1 {
+    transition: all 4s ease;
+    position: relative;
+    cursor: pointer;
+  }
+  .chart_1::after {
+    content: "80%";
+    background-color: #fb5621;
+    transition: all 0.4s ease;
+    position: absolute;
+    color: white;
+    font-weight: 600;
+    top: 0px;
+    left: 0px;
+    animation: chartAfter_1 3s forwards;
+    height: 100%;
+  }
+  @keyframes chartAfter_1 {
+    0% {
+      width: 0%;
+    }
+    50% {
+      width: 50%;
+    }
+    100% {
+      width: 80%;
+    }
+  }
+  /* chart2 */
+
+  .chart_2 {
+    transition: all 4s ease;
+    position: relative;
+    cursor: pointer;
+  }
+  .chart_2::after {
+    content: "50%";
+    background-color: #fb5621;
+    transition: all 0.4s ease;
+    position: absolute;
+    color: white;
+    font-weight: 600;
+    top: 0px;
+    left: 0px;
+    animation: chartAfter_2 3s forwards;
+    height: 100%;
+  }
+  @keyframes chartAfter_2 {
+    0% {
+      width: 0%;
+    }
+    50% {
+      width: 50%;
+    }
+    100% {
+      width: 50%;
+    }
+  }
+
+  /*  */
+
+  .chart_3 {
+    transition: all 4s ease;
+    position: relative;
+    cursor: pointer;
+  }
+  .chart_3::after {
+    content: "30%";
+    background-color: #fb5621;
+    transition: all 0.4s ease;
+    position: absolute;
+    color: white;
+    font-weight: 600;
+    top: 0px;
+    left: 0px;
+    animation: chartAfter_3 3s forwards;
+    height: 100%;
+  }
+  @keyframes chartAfter_3 {
+    0% {
+      width: 0%;
+    }
+    50% {
+      width: 30%;
+    }
+    100% {
+      width: 30%;
+    }
+  }
+
+  /*  */
+  .chart_4 {
+    transition: all 4s ease;
+    position: relative;
+    cursor: pointer;
+  }
+  .chart_4::after {
+    content: "100%";
+    background-color: #fb5621;
+    transition: all 0.4s ease;
+    position: absolute;
+    color: white;
+    font-weight: 600;
+    top: 0px;
+    left: 0px;
+    animation: chartAfter_4 3s forwards;
+    height: 100%;
+  }
+  @keyframes chartAfter_4 {
+    0% {
+      width: 0%;
+    }
+    50% {
+      width: 50%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+}
