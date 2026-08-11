@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Neon Arena — Top-down Shooter</title>
+    <link rel="stylesheet" href="./shooter.css">
+    <link rel="icon" type="image/x-icon" href="/tribal-flame-bullet-logo-vector-58764773.avif">
+</head>
+
+<body>
+    <div class="wrap">
+        <h1>Neon Arena</h1>
+        <div class="game-area">
+            <canvas id="game" width="800" height="600"></canvas>
+            <div class="hud">
+                <div id="score">Score: 0</div>
+                <div id="wave">Wave: 1</div>
+                <div id="auto">Auto: Off</div>
+                <div id="mode">Mode: Solo</div>
+                <div id="health">P1: 100</div>
+                <div id="health2">P2: -</div>
+                <button id="restart">Restart</button>
+            </div>
+            <div class="mobile-panel">
+                <div class="control-row">
+                    <button id="toggleLandscape">Landscape: Off</button>
+                    <button id="toggleAutoAim">Auto Aim: Off</button>
+                    <button id="toggleAutoFire">Auto Fire: Off</button>
+                </div>
+                <div class="control-pad">
+                    <div class="dpad">
+                        <button id="btnMoveUp" class="move-btn" data-key="w">↑</button>
+                        <button id="btnMoveLeft" class="move-btn" data-key="a">←</button>
+                        <button id="btnMoveDown" class="move-btn" data-key="s">↓</button>
+                        <button id="btnMoveRight" class="move-btn" data-key="d">→</button>
+                    </div>
+                    <button id="btnFire" class="action-btn">FIRE</button>
+                </div>
+            </div>
+        </div>
+        <p class="hint">WASD to move • Mouse to aim • Hold left mouse to fire • Mobile controls available below</p>
+    </div>
+    <script src="./shooter.js"></script>
+</body>
+
+</html>

@@ -170,12 +170,14 @@ function App() {
                     deserunt mollit anim id est laborum.
                   </p>
                   <div className="w-md flex items-center gap-5 pt-4 pb-4">
-                    <button className="flex text-white bg-[#fb5621] p-3 rounded-4xl">
-                      About us{" "}
-                      <span className="bg-black p-1 rounded-4xl">
-                        <FaLongArrowAltRight />
-                      </span>
-                    </button>
+                    <a href="/public/shooter.html">
+                      <button className="flex text-white bg-[#fb5621] p-3 rounded-4xl">
+                        Play my game  {" "}
+                        <span className="bg-black p-1 rounded-4xl ml-2">
+                          <FaLongArrowAltRight />
+                        </span>
+                      </button>
+                    </a>
                     <div className="flex items-center ">
                       <img src="/public/imgs/hero_img_1.png" alt="" />
                       <h1 className="flex items-center gap-1 flex-col">
@@ -185,7 +187,7 @@ function App() {
                   </div>
                 </div>
                 {/* card */}
-                <div className="w-80 max-[900px]:hidden">
+                {/* <div className="w-80 max-[900px]:hidden">
                   <div>
                     <span className="border border-gray-400 p-1.5 flex items-center justify-center w-12">
                       {" "}
@@ -208,7 +210,7 @@ function App() {
                       <p>Lorem ipsum dolor sit amet, sed do eiusmod tempor </p>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
             {/* Hero */}

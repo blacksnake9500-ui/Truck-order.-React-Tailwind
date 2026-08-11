@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background: #4a8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.game-wrap {
+  width: 420px;
+  text-align: center;
+}
+h1 {
+  color: #fff;
+  margin-bottom: 12px;
+}
+.game-area {
+  position: relative;
+  margin: 0 auto;
+  background: #666;
+  border-radius: 8px;
+  padding: 12px;
+}
+canvas {
+  display: block;
+  background: #2b2b2b;
+  border-radius: 6px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+.hud {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+  color: #fff;
+}
+#restart {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  background: #ff6b6b;
+  color: #fff;
+  cursor: pointer;
+}
+#nitro {
+  flex: 1;
+  margin: 0 10px;
+  background: rgba(255, 255, 255, 0.12);
+  height: 12px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+#nitro-bar {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, #3498db, #8e44ad);
+  transform-origin: left;
+  transition: width 0.08s linear;
+}
+.controls {
+  color: #023;
+  opacity: 0.9;
+  margin-top: 8px;
+}
+#score {
+  font-weight: 700;
+}
+@media (max-width: 480px) {
+  .game-wrap {
+    width: 360px;
+  }
+}

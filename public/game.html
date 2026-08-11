@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Endless Car Game</title>
+  <link rel="stylesheet" href="./game.css">
+</head>
+<body>
+  <div class="game-wrap">
+    <h1>Endless Car</h1>
+    <div class="game-area">
+      <canvas id="game" width="360" height="640"></canvas>
+      <div class="hud">
+        <div id="score">Score: 0</div>
+        <div id="nitro">
+          <div id="nitro-bar"></div>
+        </div>
+        <button id="restart">Restart</button>
+      </div>
+    </div>
+    <p class="controls">Controls: ← and → or A and D</p>
+  </div>
+  <script src="./game.js"></script>
+</body>
+</html>
